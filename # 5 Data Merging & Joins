@@ -1,0 +1,56 @@
+# Data Merging
+
+# In Python Pandas, joins combine two DataFrames using a common column or index.
+
+import pandas as pd
+
+# print(pd.__version__)
+
+#creating 2 dataframes
+data1 = pd.DataFrame({'key': ['A', 'B', 'C', 'D', 'E', 'F', 'G'],
+			'Value1': [1, 2, 3, 4, 5, 6, 7] } )
+data2 = pd.DataFrame({'key': ['C', 'D', 'E', 'F', 'G', 'H'],
+			'Value1': [8, 9, 10, 11, 12, 13] } )
+print(data1)
+print(data2)
+
+# Inner Join - Returns only rows with matching IDs in both DataFrames. 
+# pd.merge(df1, df2, on='ID', how='inner')
+
+merge_inner_join = pd.merge(data1, data2, on='key', how='inner')
+print(merge_inner_join)
+
+# Left Join - Returns all rows from the left DataFrame (df1) and matching rows from the right DataFrame (df2).
+#pd.merge(df1, df2, on='ID', how='left')
+
+merge_left_join = pd.merge(data1, data2, on='key', how='left')
+print(merge_left_join)
+
+# Right Join - Returns all rows from the right DataFrame (df2) and matching rows from the left DataFrame (df1).
+#pd.merge(df1, df2, on='ID', how='right')
+
+merge_right_join = pd.merge(data1, data2, on='key', how='right')
+print(merge_right_join)
+
+# Left Anti Join - Returns rows from the left DataFrame that have no matching ID in the right DataFrame.
+#pd.merge(df1, df2, on='ID', how='left_anti')
+
+merge_left_anti = pd.merge(data1, data2, on='key', how='left_anti')
+print(merge_left_anti)
+# OR
+merged_left = pd.merge(data1, data2, on='key', how='left', indicator = True)
+merge_left_anti_join = merged_left[merged_left['_merge'] == 'left_only']
+merge_left_anti_join = merge_left_anti_join.drop('_merge', axis = 1)
+print(merge_left_anti_join)
+
+# # Right Anti Join - Returns rows from the right DataFrame that have no matching ID in the left DataFrame.
+# #pd.merge(df1, df2, on='ID', how='right_anti')
+# # Note: left_anti and right_anti are supported in Pandas 3.0 and later.
+
+merge_right_anti = pd.merge(data1, data2, on='key', how='right_anti')
+print(merge_right_anti)
+# OR
+merged_right = pd.merge(data1, data2, on='key', how='right', indicator = True)
+merge_right_anti_join = merged_right[merged_right['_merge'] == 'right_only']
+merge_right_anti_join = merge_right_anti_join.drop('_merge', axis = 1)
+print(merge_right_anti_join)
