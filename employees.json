@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "first_name": "Liam",
+    "last_name": "Williams",
+    "email": "liam.williams1@sample.net",
+    "age": 49,
+    "city": "Riverside",
+    "salary": 156973.24,
+    "joined": "2020-04-18"
+  },
+  {
+    "id": 2,
+    "first_name": "Jane",
+    "last_name": "Williams",
+    "email": "jane.williams2@example.com",
+    "age": 71,
+    "city": "Fairview",
+    "salary": 50435.05,
+    "joined": "2024-01-27"
+  },
+  {
+    "id": 3,
+    "first_name": "Emma",
+    "last_name": "Moore",
+    "email": "emma.moore3@test.org",
+    "age": 76,
+    "city": "Fairview",
+    "salary": 128705.61,
+    "joined": "2022-01-06"
+  },
+  {
+    "id": 4,
+    "first_name": "Emma",
+    "last_name": "Martinez",
+    "email": "emma.martinez4@example.com",
+    "age": 43,
+    "city": "Burlington",
+    "salary": 106198.11,
+    "joined": "2016-01-05"
+  },
+  {
+    "id": 5,
+    "first_name": "Benjamin",
+    "last_name": "Rodriguez",
+    "email": "benjamin.rodriguez5@sample.net",
+    "age": 62,
+    "city": "Manchester",
+    "salary": 189641.05,
+    "joined": "2023-04-19"
+  },
+  {
+    "id": 6,
+    "first_name": "Amelia",
+    "last_name": "Williams",
+    "email": "amelia.williams6@demo.io",
+    "age": 34,
+    "city": "Manchester",
+    "salary": 26628.09,
+    "joined": "2016-08-19"
+  },
+  {
+    "id": 7,
+    "first_name": "Mia",
+    "last_name": "Jones",
+    "email": "mia.jones7@demo.io",
+    "age": 21,
+    "city": "Ashland",
+    "salary": 33038.53,
+    "joined": "2021-01-03"
+  },
+  {
+    "id": 8,
+    "first_name": "Emma",
+    "last_name": "Lopez",
+    "email": "emma.lopez8@demo.io",
+    "age": 30,
+    "city": "Greenville",
+    "salary": 146867.05,
+    "joined": "2015-12-15"
+  },
+  {
+    "id": 9,
+    "first_name": "Isabella",
+    "last_name": "Lopez",
+    "email": "isabella.lopez9@sample.net",
+    "age": 29,
+    "city": "Greenville",
+    "salary": 175981.13,
+    "joined": "2015-01-27"
+  },
+  {
+    "id": 10,
+    "first_name": "Amelia",
+    "last_name": "Johnson",
+    "email": "amelia.johnson10@demo.io",
+    "age": 54,
+    "city": "Madison",
+    "salary": 22669.84,
+    "joined": "2020-03-09"
+  },
+  {
+    "id": 11,
+    "first_name": "Isabella",
+    "last_name": "Moore",
+    "email": "isabella.moore11@demo.io",
+    "age": 50,
+    "city": "Madison",
+    "salary": 173908.21,
+    "joined": "2017-02-16"
+  },
+  {
+    "id": 12,
+    "first_name": "Logan",
+    "last_name": "Rodriguez",
+    "email": "logan.rodriguez12@mail.co",
+    "age": 40,
+    "city": "Ashland",
+    "salary": 45668.06,
+    "joined": "2015-02-14"
+  },
+  {
+    "id": 13,
+    "first_name": "Lucas",
+    "last_name": "Martinez",
+    "email": "lucas.martinez13@test.org",
+    "age": 32,
+    "city": "Ashland",
+    "salary": 139913.4,
+    "joined": "2024-09-30"
+  },
+  {
+    "id": 14,
+    "first_name": "Maria",
+    "last_name": "Taylor",
+    "email": "maria.taylor14@test.org",
+    "age": 65,
+    "city": "Clinton",
+    "salary": 66039.59,
+    "joined": "2023-03-26"
+  },
+  {
+    "id": 15,
+    "first_name": "Noah",
+    "last_name": "Smith",
+    "email": "noah.smith15@mail.co",
+    "age": 20,
+    "city": "Burlington",
+    "salary": 48442.29,
+    "joined": "2017-09-05"
+  },
+  {
+    "id": 16,
+    "first_name": "Ethan",
+    "last_name": "Thomas",
+    "email": "ethan.thomas16@demo.io",
+    "age": 44,
+    "city": "Clinton",
+    "salary": 60796.04,
+    "joined": "2015-01-24"
+  },
+  {
+    "id": 17,
+    "first_name": "Charlotte",
+    "last_name": "Wilson",
+    "email": "charlotte.wilson17@sample.net",
+    "age": 36,
+    "city": "Fairview",
+    "salary": 51443.89,
+    "joined": "2022-11-28"
+  },
+  {
+    "id": 18,
+    "first_name": "Olivia",
+    "last_name": "Brown",
+    "email": "olivia.brown18@demo.io",
+    "age": 33,
+    "city": "Fairview",
+    "salary": 55629.13,
+    "joined": "2020-06-28"
+  },
+  {
+    "id": 19,
+    "first_name": "Jane",
+    "last_name": "Taylor",
+    "email": "jane.taylor19@example.com",
+    "age": 30,
+    "city": "Georgetown",
+    "salary": 90836.24,
+    "joined": "2020-12-07"
+  },
+  {
+    "id": 20,
+    "first_name": "Liam",
+    "last_name": "Rodriguez",
+    "email": "liam.rodriguez20@example.com",
+    "age": 38,
+    "city": "Oxford",
+    "salary": 123129.32,
+    "joined": "2016-11-24"
+  }
+]
