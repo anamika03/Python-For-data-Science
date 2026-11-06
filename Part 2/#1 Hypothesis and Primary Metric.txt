@@ -1,0 +1,149 @@
+# A/B TESTING
+
+A/B testing is an experiment used to compare two versions of something to find out which performs better.
+For example, a website wants to know whether a blue button (A) or a green button (B) gets more clicks.
+
+A/B testing, or split testing, originated from statistical randomised controlled trials and is one of the most popular ways for Businesses to test 
+- New UX features
+- New versions of a product
+- New versions of an algorithm
+
+Control Group - exposed to one version or the current version of the product. (The original version.)
+
+Experimental Group - exposed to the second or new version of the product. (The new version being tested.)
+
+AB Test Process Cycle
+A/B Testing Process has 5 steps:
+
+1. Hypothesis and Primary Metric
+A hypothesis is a statement you want to test using data.
+
+Example: You want to change the colour of a website's Buy Now button from grey to green.
+
+Null hypothesis (H₀): The green button does not change the purchase conversion rate.
+Alternative hypothesis (H₁): The green button changes the purchase conversion rate.
+
+You collect data to determine whether there is enough statistical evidence to reject H₀.
+
+The business hypothesis describes what two products are being compared and what is the desired impact or difference for the business.
+- how to ‘fix’ a potential issue in the product
+- solution will influence the Key Performance Indicators (KPIs)
+
+A primary metric is the main measurement used to decide whether the experiment was successful. It will be used to identify whether there is a statistically significant difference between the control and experimental groups.
+- Single primary metric 
+- answering Metric Validity Question 
+
+For the button experiment, the primary metric could be the purchase conversion rate.
+
+Choosing Primary Metric
+
+Metric Validity Question: If this chosen metric were to increase significantly while everything else stays constant, would we achieve our goal and address the problem?
+- Higher revenue?
+- Higher engagement?
+- More views?
+	Revenue Primary Metric
+	Conversion rate = (Number of conversions / Number of total visitors) * 100%
+It allow use to measure the effectiveness of their website, a product or a market product. It identifies areas for improvement, such as increasing the number of conversions or improving the user experience.
+Engagement Primary Metric
+	CRT(Clicks Through Rates) = (Number of clicks / Number of impressions) * 100%
+	If a website has 1000 impressions and that leads to 25 clicks, 
+	then CTR = (25/1000)*100% = 2.5%
+It allows businesses to measure the effectiveness of their digital marketing campaigns and the users' engagement with their websites. It is also used to measure the performance of different ad formats such as text ads, banner ads, video ads, etc.
+
+Statistical Hypothesis
+Hypothesis Testing or Statistical Hypothesis is a statistical procedure that is used to determine whether there is a significant difference between the observed data and the expected data.
+- To test the result of an experiment
+- Establish statistical significance
+
+Put the hypothesis subject to rejection under the Null Hypothesis (H₀)
+Put the hypothesis subject to acceptance under the Alternative Hypothesis (H1 or Ha)
+
+Example:
+Null: CTR of “Learn More” button with blue colour is equal to CTR of green button.
+Alternate: CTR of “Learn More” button with blue colour is larger than CTR of green button. 
+
+
+AB Test Design - Power Analysis	
+A/B test design includes three steps. 
+1. Power Analysis 
+2. Minimum Sample Size 
+3. Test Duration
+
+Power Analysis: which includes making assumptions about the model parameters, including the power of the test, the significance level, etc. 
+
+1. Determine the power of the test
+It is the probability of correctly rejecting the null hypothesis.
+Power is the probability of making a correct decision.
+Probability of not making a Type II error (1- )
+: Type II error
+Common to pick 80% as the power of the A/B test
+
+2. Determine Significance Level of the test
+2.1	probability of rejecting the null, while the null is true
+2.2 	detecting statistical significance when it’s not
+2.3	probability of making a type I error ()
+2.4	common to pick 5% as the significance level of the test
+
+3. Determine Minimum Detectable Effect of the test
+	3.1	What is the substantive to the statistical significance for business?
+3.2	Proxy that relates to the smallest effect that would matter in practice
+3.3	No common level → depends on the business ask
+3.4	 (delta) — often used to represent the minimum effect size you want to detect.
+If Version A has a 10% conversion rate and you want to detect an increase to 12%: MDE = 12% - 10% = 2%
+
+
+
+Calculation of Sample Size
+
+Calculating Minimum Sample Size: 
+1. Primary metric of A/B testing is in the form of a binary variable
+2. Primary metric of the test is in the form of proportions or averages
+3. This is a two-tailed test because you are checking whether the experimental group’s mean is either higher or lower than the control group’s mean.
+		H0: con=exp
+H1: conexp
+Where:
+con = mean of the control group (A).
+exp = mean of the experimental group (B).
+= means there is no difference between the means.
+ means there is a difference between the means.
+
+4. This image explains the sampling distribution of the means in A/B testing and how to compare the control group with the experimental group
+Mean of the control group
+XconNcon,con2
+Mean of the experimental group
+XexpNexp,exp2
+Here,
+	X represents the sample mean, 
+ the population mean, 
+2 the population variance, 
+and N the sample size.
+
+Important: The image appears to omit the division by sample size in the first two distributions if it intends to show the distributions of the sample means. The variance of a sample mean is 2/N, not 2.
+Difference between the two means
+Xcon-XexpNcon-exp,con2Ncon+exp2Nexp
+
+
+This is the key equation for A/B testing.
+Mean of the difference: con-exp
+Variance of the difference: con2Ncon+exp2Nexp
+Standard error (SE):  SE=con2Ncon+exp2Nexp
+We assume the two groups are independent.
+
+Online Experimentation
+	Test Duration:
+	Duration = N / visitors per day
+	Where N = minimum sample size
+
+Too small test duration → Novelty Effects
+→ Novelty effect is a temporary change in user behaviour caused by the excitement or curiosity of experiencing something new, which may distort A/B test results.
+Example: Users click more on a newly designed website because it looks different, but their interest decreases after a few days.
+
+Too large test duration → Maturation Effects
+→ Maturation Effect can be a potential problem in A/B testing. Maturation effect occurs when users' behaviour changes naturally over time, regardless of the experiment, which can affect the test results.
+Example: Users gradually lose interest in an app or develop new habits over several weeks.
+
+Why is choosing the right test duration important?
+→ A test that is too short may not capture normal user behaviour or account for differences between weekdays and weekends. It may also be affected by novelty effects or random variation.
+→ A test that is too long may expose the experiment to maturation effects, seasonality, and external events that influence user behaviour.
+Conclusion: Choose a test duration that is long enough to obtain reliable results and capture relevant behavioural patterns, but not unnecessarily long.
+
